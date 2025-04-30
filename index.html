@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> <!-- EXTERNAL CSS FILE KO LINK KIAA-->
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" cl alt="LOGO">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#potfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div class="header-text">
+                <p>Fullstack developer</p>
+                <h1>Hi, I'm <span >Tanush</span> from india</h1>
+
+            </div>
+        </div>
+    </div>
+
+<!--ABOUT sECTION-->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/images/tan.jpg" alt="user image">
+            </div>
+            <div class="about-col-2">
+             <h1 class="sub-title">About Me</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aperiam dolorem temporibus. Iste fuga cumque facilis corporis voluptatum magnam deserunt in natus illum ipsam non cum veritatis quibusdam veniam molestias ut iusto suscipit, consequatur illo nemo voluptatem molestiae. Est labore a inventore aut deserunt, eum cum distinctio illum quae porro vero quia nisi sequi quaerat. Quod non porro accusantium. Error? ipsum dolor, sit amet consectetur adipisicing elit. Cum nesciunt possimus, aliquid alias veniam a consectetur fuga, molestiae quaerat quod tempore sequi est quo debitis et animi eum voluptatibus minima?</p>
+            
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">skills</p>
+                <p class="tab-links" onclick="openTab('experience')">experience</p>
+                <p class="tab-links" onclick="openTab('education')">education</p>
+   
+            </div>
+              <div class="tab-contents active-tab" id="skills">      <!--YHA PAR UPAR BALE SECTIONS SKILLS EDU ND EXPE KAA DATA LIKHEGE-->
+                <ul>
+                    <li><span>skills  </span> <br> designing web/app interfaces</li>
+                    <li><span>web developement</span> <br> Web app developement</li>
+                    <li><span>DEVELOPER TOOLS</span> <br>/>GITT,github,gitlab,TFS,postman,jira</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>experience  </span> <br> designing web/app interfaces</li>
+                    <li><span>web developement</span> <br> Web app developement</li>
+                    <li><span>DEVELOPER TOOLS</span> <br>/>GITT,github,gitlab,TFS,postman,jira</li>
+                </ul>
+              </div>
+              <div class="tab-contents"id="education">
+                <ul>
+                    <li><span>education </span> <br> designing web/app interfaces</li>
+                    <li><span>web developement</span> <br> Web app developement</li>
+                    <li><span>DEVELOPER TOOLS</span><br>/>GITT,github,gitlab,TFS,postman,jira</li>
+                </ul>
+              </div>
+              </div>
+        </div>
+    </div>
+ </div>
+
+     <!--services section-->
+     <div id="services">
+        <div class="container">
+            <h1>My services</h1>
+
+            <div class="service-list">
+              <i class="fas fa-code"></i>
+                <h2>Web Design 1</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nostrum mollitia laboriosam in dolor id quas dolore veniam, saepe hic quod sit facilis natus molestiae doloremque quam pariatur est consectetur!</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="service-list">
+                <i class="fas fa-code"></i>
+                  <h2>Web Design 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nostrum mollitia laboriosam in dolor id quas dolore veniam, saepe hic quod sit facilis natus molestiae doloremque quam pariatur est consectetur!</p>
+                  <a href="">Learn More</a>
+              </div>
+              <div class="service-list">
+                <i class="fas fa-code"></i>
+                  <h2>Web Design 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nostrum mollitia laboriosam in dolor id quas dolore veniam, saepe hic quod sit facilis natus molestiae doloremque quam pariatur est consectetur!</p>
+                  <a href="">Learn More</a>
+              </div>
+
+        </div>
+
+     </div>
+<script>
+   var tablinks = document.getElementsByClassName("tab-links");
+  
+   var tabcontents = document.getElementsByClassName("tab-contents");
+function openTab(tabname){
+
+  for(i of tablinks){
+   i.classList.remove("active-link"); //tablinks me classes name stored hain
+  }
+  for(i of tabcontents){
+   i.classList.remove("active-tab"); 
+  }
+  event.currentTarget.classList.add("active-link"); //jispe click kia uspe active list ki class start huii
+  document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+</body>
+</html>
